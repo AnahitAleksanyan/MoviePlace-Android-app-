@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:foregroundGravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp">
+
+    <LinearLayout
+        android:id="@+id/movie_item"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#20589DDA"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/movie_item_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/movie_image" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Hello World"
+            android:shadowColor="#A7B7BC"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="8"
+            android:textSize="14sp"
+            android:textColor="#0C1E9F"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="@drawable/back_image"
+        android:contentDescription="@string/login_background_image" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+
+        <!-- Main content -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="#025DCC"
+            android:contentDescription="@string/add_movie"
+            android:src="@drawable/add_icon"
+            android:tint="#FFFFFF"
+            app:fabSize="auto"
+            tools:ignore="RtlHardcoded" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#C9025DCC"
+            app:itemIconTint="#FFF"
+            app:itemTextColor="#FFF"
+            app:menu="@menu/bottom_navigation_menu" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

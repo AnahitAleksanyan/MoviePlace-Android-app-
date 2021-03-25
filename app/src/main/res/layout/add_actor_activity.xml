@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="@drawable/back_image"
+        android:contentDescription="@string/login_background_image" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/add_actor_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/add_actor_surname"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="Surname"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/add_actor_date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="Date of birth"
+            android:inputType="date"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            tools:ignore="RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/country_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_style" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/add_movie_Category"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="Category"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="530dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/save_actor_btn"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#3353B1"
+            android:text="@string/save_actor"
+            android:textColor="#FFF"
+            app:cornerRadius="15dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="273dp"
+            tools:layout_editor_absoluteY="424dp" />
+    </LinearLayout>
+</RelativeLayout>
